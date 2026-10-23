@@ -2642,3 +2642,35 @@ section {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Remove left and right white space */
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.velora-page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: clamp(16px, 3vw, 48px);
+  padding-right: clamp(16px, 3vw, 48px);
+  box-sizing: border-box;
+}
